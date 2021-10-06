@@ -14,4 +14,10 @@ class FavoritesController < ApplicationController
       redirect_to topics_path, danger: 'お気に入り登録に失敗しました'
     end
   end
+  
+  def destroy
+    favorite = Favorite.new
+    favorite.user_id = current_user.id
+    favorite.topic_id = params[:topic_id]
+  end
 end  
