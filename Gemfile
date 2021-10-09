@@ -43,6 +43,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "dotenv-rails"
 end
 
 group :development do
@@ -71,3 +72,4 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'  
 gem 'bcrypt'
 gem 'carrierwave'
+gem 'fog-aws'
